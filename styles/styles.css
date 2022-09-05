@@ -1,0 +1,30 @@
+tr {
+   
+   height: 100px; 
+}
+td{
+    background-color: red;
+    position: relative;
+    
+}
+body{
+    background-color: white;
+}
+table{
+    border: 10%;
+    background-color: blue;
+    border-radius: 10%;
+    margin: auto;
+    width: 300px;
+    
+
+}
+.who{
+   
+}
+.punt{
+    
+}
+.naam{
+    height: auto;
+}
