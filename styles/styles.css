@@ -1,48 +1,43 @@
-.punt{
-    height: 10px;
-}
 
-tr {
-   
-   height: 100px; 
-   margin: 10%;
-   
-   
-
-}
-td{
-    background-color: red;
-    position: relative;
+th, tr{
+    background-color: white;
     border-radius: 30%;
     text-align: center;
+    border-collapse: collapse;
     
     
     
+    
+    
+    
+}
+td{
+    border-collapse: collapse;
 }
 body{
     background-color: white;
 }
 table{
-    border: 10%;
-    background-color: blue;
-    border-radius: 10%;
-    margin: auto;
-    width: 300px;
     
+    background-color: black;
+    border: 5px solid;
+    border-radius: 8%;
+    margin: 20%;
+    width: 30%;
+
     
+      
 
 }
-.who{
-    border-collapse: collapse;
-   
-}
 
-.naam{
-    height: auto;
-}
+
 img{
-    height: auto;
+    
     width: 50px;
     margin: 10%;
-    ;
+    
+}
+
+.afb{
+   border: 0px; 
 }
