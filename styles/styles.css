@@ -1,10 +1,22 @@
+.punt{
+    height: 10px;
+}
+
 tr {
    
    height: 100px; 
+   margin: 10%;
+   
+   
+
 }
 td{
     background-color: red;
     position: relative;
+    border-radius: 30%;
+    text-align: center;
+    
+    
     
 }
 body{
@@ -17,14 +29,20 @@ table{
     margin: auto;
     width: 300px;
     
+    
 
 }
 .who{
+    border-collapse: collapse;
    
 }
-.punt{
-    
-}
+
 .naam{
     height: auto;
+}
+img{
+    height: auto;
+    width: 50px;
+    margin: 10%;
+    ;
 }
