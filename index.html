@@ -15,31 +15,36 @@
 <body>
 
     <div class="grid-container">
-        <div class="grid-item"><img src="afbeeldingen/info.png"/>Wie ben ik</div>
-        <div class="grid-item"><img src="afbeeldingen/home-page.png"/>Woonplaats</div>
-        <div class="grid-item"><img src="afbeeldingen/joystick.png"/>Hobbies</div> 
+    
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/info.png"/>Wie ben ik</div>
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/home-page.png"/>Woonplaats</div>
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/joystick.png"/>Hobbies</div> 
          
-        <div class="grid-item"><img src="afbeeldingen/island.png"/>Ambities</div>
-        <div class="grid-item"><img src="afbeeldingen/laugh.png"/>Woordgrappen</div>
-        <div class="grid-item"><img src="afbeeldingen/competence.png"/>Skills</div>  
-        
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/island.png"/>Ambities</div>
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/laugh.png"/>Woordgrappen</div>
+        <div class="grid-item"><img id="grootte" src="afbeeldingen/competence.png"/>Skills</div>
         
         
         <div class="grid-item1"><p>Demi van der Maarl</p></div>
         
         
         
-        
-        <div class="grid-item2"><div class="groter"><img src="afbeeldingen/foto van mij.jpeg"/></div></div>
+        <div class="grid-item2"><div><img id="fotomidden" src="afbeeldingen/foto van mij.jpeg"/></div></div>
        
         
-        <div class="grid-item3"><div class="center"><hr><img src="afbeeldingen/standby.png"/></div></div>
+        <div class="grid-item3"><div class="center"><hr><img id="grootte" src="afbeeldingen/standby.png"/></div></div>
         
       </div>
 </body>
 </html>
 </article>
-
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("Popup");
+    popup.classList.toggle("show");
+  }
+  </script>
  
 </body>
 </html>
