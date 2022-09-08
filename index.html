@@ -13,18 +13,24 @@
 </head>
 
 <body>
+  
 
     <div class="grid-container">
     
         <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/info.png"/>Wie ben ik</div>
-            <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"></span>
+            <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
 
-        <div class="grid-item"><img id="grootte" src="afbeeldingen/home-page.png"/>Woonplaats</div>
+        <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/home-page.png"/>Woonplaats</div>
+        <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
         <div class="grid-item"><img id="grootte" src="afbeeldingen/joystick.png"/>Hobbies</div> 
+        <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
          
-        <div class="grid-item"><img id="grootte" src="afbeeldingen/island.png"/>Ambities</div>
-        <div class="grid-item"><img id="grootte" src="afbeeldingen/laugh.png"/>Woordgrappen</div>
-        <div class="grid-item"><img id="grootte" src="afbeeldingen/competence.png"/>Skills</div>
+        <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/island.png"/>Ambities</div>
+        <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
+        <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/laugh.png"/>Woordgrappen</div>
+        <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
+        <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/competence.png"/>Skills</div>
+        <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"><button id="close" onclick="myFunction()">&times</button></span>
         
         
         <div class="grid-item1"><p>Demi van der Maarl</p></div>
@@ -46,6 +52,9 @@
     var popup = document.getElementById("Popup");
     popup.classList.toggle("show");
   }
+
+
+
   </script>
  
 </body>
