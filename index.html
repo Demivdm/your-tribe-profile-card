@@ -16,7 +16,9 @@
 
     <div class="grid-container">
     
-        <div class="grid-item"><img id="grootte" src="afbeeldingen/info.png"/>Wie ben ik</div>
+        <div class="grid-item popup" onclick="myFunction()"><img id="grootte" src="afbeeldingen/info.png"/>Wie ben ik</div>
+            <span class="popuptext" id="Popup"><img src="afbeeldingen/text.png"></span>
+
         <div class="grid-item"><img id="grootte" src="afbeeldingen/home-page.png"/>Woonplaats</div>
         <div class="grid-item"><img id="grootte" src="afbeeldingen/joystick.png"/>Hobbies</div> 
          
@@ -39,7 +41,7 @@
 </html>
 </article>
 <script>
-  // When the user clicks on div, open the popup
+
   function myFunction() {
     var popup = document.getElementById("Popup");
     popup.classList.toggle("show");

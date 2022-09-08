@@ -76,7 +76,24 @@ p{
 .center{
     text-align: center;
 }
-/.popup {
+.popuptext{
   display: inline-block;
+  cursor: pointer;
+  visibility: hidden;
+  position: absolute;
+  height: 225px;
+  width: 250px;
+  
+}
+
+.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background-color: blue;
+  border-radius: 10%;
+  
+}
+.popup{
   cursor: pointer;
 }
