@@ -6,7 +6,7 @@
   max-width: 25rem;
   width: 100%;
   position: relative;
-  background-color: purple;
+  background-color: lightblue;
   margin: 0 auto;
   border-radius:50px;
   border: 8px solid black;
@@ -32,7 +32,7 @@ li{
 .list-item-images{
   height: 50px;
   width: 50px;
-  background-color: lightblue;
+  background-color: lightpink;
   border-radius: 8px;
   display: flex;
   margin: 0 auto;
@@ -46,7 +46,7 @@ p{
 
 
 .middle-header{
-  background-color: green;
+  background-color: lightgreen;
   margin: 0 5em 1em 5em;
   border-radius: 8px;
   display: flex;
@@ -61,7 +61,7 @@ p{
 }
 
 .bottom-bar{
-  background-color: red;
+  background-color: lightpink;
   position: absolute;
   bottom: 0;
   height: 5em;
@@ -75,4 +75,39 @@ p{
   top: 2em;
   transform: translate(-50%, -50%);
   position: relative;
+}
+
+/* Pop up */
+
+.popup{
+  background-color: blue;
+  position: absolute;
+  width: 20rem;
+  top: 4rem;
+  transform: translate(10%) scale(0);
+  border-radius: 20px;
+  
+
+
+}
+
+span{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.closeButton{
+  font-size: 50px;
+  margin: 0 auto;
+  position: absolute;
+  left: 85%;
+  cursor: pointer;
+}
+
+.active-popup.active{
+  
+  background-color: blue;
+  z-index:0;
+  
 }
