@@ -1,66 +1,66 @@
-*{
+* {
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
 }
-.phone-background-container{
+
+.phone-background-container {
   max-width: 25rem;
   width: 100%;
   position: relative;
   background-color: lightblue;
   margin: 0 auto;
-  border-radius:50px;
+  border-radius: 50px;
   border: 8px solid black;
   box-shadow: 15px 10px 50px black;
- 
-
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding:2em ;
+  padding: 2em;
 }
 
-li{
+li {
   list-style-type: none;
- width: 104px;
-
+  width: 104px;
+  cursor: pointer;
 }
 
-.list-item-images{
+.list-item-images {
   height: 50px;
   width: 50px;
   background-color: lightpink;
   border-radius: 8px;
   display: flex;
   margin: 0 auto;
- 
-  
 }
-p{
+
+p {
   text-align: center;
 }
 
+li > p {
+  font-size: 0.9rem;
+}
 
-
-.middle-header{
+.middle-header {
   background-color: lightgreen;
   margin: 0 5em 1em 5em;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
-.middle-profile-picture{
+.middle-profile-picture {
   display: flex;
   height: 30rem;
   margin: 0 auto;
   border-radius: 1rem;
 }
 
-.bottom-bar{
+.bottom-bar {
   background-color: lightpink;
   position: absolute;
   bottom: 0;
@@ -69,7 +69,7 @@ p{
   width: 100%;
 }
 
-.contact-button{
+.contact-button {
   width: 50px;
   left: 50%;
   top: 2em;
@@ -79,35 +79,43 @@ p{
 
 /* Pop up */
 
-.popup{
+.popup {
   background-color: blue;
   position: absolute;
   width: 20rem;
   top: 4rem;
-  transform: translate(10%) scale(0);
+  left: 50%;
+  transform: translateX(-50%) scale(0);
   border-radius: 20px;
-  
-
-
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
 }
 
-span{
+.popup p{
+  color: lightblue;
+}
+
+h2{
+  color: lightblue;
+}
+span {
   margin: 0 auto;
   text-align: center;
 }
 
-
-.closeButton{
-  font-size: 50px;
+.closeButton {
+  font-size: 2rem;
   margin: 0 auto;
   position: absolute;
-  left: 85%;
+  right: 1em;
+  top: 1em;
   cursor: pointer;
 }
 
-.active-popup.active{
-  
-  background-color: blue;
-  z-index:0;
-  
+.popup.active {
+  transform: translateX(-50%) scale(1);
+}
+.jokes-list{
+  color: lightblue;
 }

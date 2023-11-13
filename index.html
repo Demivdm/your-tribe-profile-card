@@ -9,14 +9,24 @@
   <meta name="visitekaartje" content="Visitekaartje voor fdnd">
   <meta name="Demi" content="SitePoint">
 <link rel="stylesheet" href="styles/styles.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body background="afbeeldingen/bg.jpeg">
   
   <section class="phone-background-container">
-
     <ul>
+      <!-- data poup is een attribuut en moet dezelfde naam hebben als de id die wordt opgehaald -->
+      <li class="popup-trigger" data-popup="popupWieBenIk"><img class="list-item-images" src="afbeeldingen/info.png" alt=""><p>Wie ben ik?</p></li>
+      <li class="popup-trigger" data-popup="popupWaarVandaan"><img class="list-item-images" src="afbeeldingen/home-page.png" alt=""><p>Woonplaats</p></li>
+      <li class="popup-trigger" data-popup="popupHobbys"><img class="list-item-images" src="afbeeldingen/joystick.png" alt=""><p>Hobby's</p></li>
+      <li class="popup-trigger" data-popup="popupAmbities"><img class="list-item-images" src="afbeeldingen/island.png" alt=""><p>Ambities</p></li>
+      <li class="popup-trigger" data-popup="popupWoordgrappen"><img class="list-item-images" src="afbeeldingen/laugh.png" alt=""><p>Woordgrappen</p></li>
+      <li class="popup-trigger" data-popup="popupSkills"><img class="list-item-images" src="afbeeldingen/competence.png" alt=""><p>Skills</p></li>
+    </ul>
+    <!-- <ul>
       <li class="active-popup" id="popup-1" onclick="togglePopup()"><img class="list-item-images" src="afbeeldingen/info.png" alt=""><p>Wie ben ik?</p>
       
       </li>
@@ -41,10 +51,10 @@
       <li><img class="list-item-images" src="afbeeldingen/competence.png" alt=""><p>Skills</p>
         
       </li>
-    </ul>
+    </ul> -->
 
     <!-- pop up containers -->
-    <div class="popup active-popup" id="popup-1" onclick="togglePopup()">
+    <div class="popup active-popup" id="popupWieBenIk" onclick="togglePopup()">
       <span>
         <p  class="closeButton" onclick="togglePopup()">&times</p>
       <h2>Wie ben ik?</h2>
@@ -52,16 +62,16 @@
    </span>
     </div> 
 
-    <div class="popup" id="pop-up1" onclick="togglePopup()" id="popup-tekst" onclick="openPopup()">
+    <div class="popup" id="popupWaarVandaan" onclick="togglePopup()" id="popup-tekst" onclick="openPopup()">
       <span>
         <p  class="closeButton" onclick="togglePopup()">&times</p>
-      <h2>Waar kom ik vandaan?</h2>
+      <h2>Woonplaats(en)</h2>
       <p>Ik ben veel verhuisd waardoor ik opgegroeid bent Nieuw-vennep, Hoofddorp en Amsterdam.Momenteel woon ik in Amsterdam-noord. </p>
             
    </span>
     </div>  
 
-    <div class="popup" id="pop-up1" onclick="togglePopup()">
+    <div class="popup" id="popupHobbys" onclick="togglePopup()">
       <span>
         <p  class="closeButton" onclick="togglePopup()">&times</p>
       <h2>Mijn Hobby's</h2>
@@ -69,7 +79,7 @@
    </span>
     </div> 
 
-    <div class="popup" id="pop-up1" onclick="togglePopup()">
+    <div class="popup" id="popupAmbities" onclick="togglePopup()">
       <span>
         <p  class="closeButton" onclick="togglePopup()">&times</p>
       <h2>Mijn ambities</h2>
@@ -77,7 +87,7 @@
     </span>
     </div>
     
-    <div class="popup active-popup" >
+    <div class="popup active-popup" id="popupWoordgrappen" onclick="togglePopup()">
       <span>
         <p  class="closeButton" onclick="togglePopup()">&times</p>
       <h2>Woordgrappen</h2>
@@ -88,9 +98,9 @@
    </span>
     </div>  
 
-    <div class="popup" id="pop-up1" onclick="togglePopup()">
+    <div class="popup" id="popupSkills" onclick="togglePopup()">
       <span>
-        <p  class="closeButton" onclick="closeForm()">&times</p>
+        <p  class="closeButton" onclick="togglePopup()">&times</p>
       <h2>Skills</h2>
       <ul>
         <p>Ik kan 3D printen en een klein beetje 3D ontwerpen in Autocad</p>
@@ -116,11 +126,46 @@
 </body>
 </html>
 
-<script>
-  let popup = document.getElementById("popup-1");
+<script defer>
 
+// hier worden alle list items opgehaald
 
-  function togglePopup(){
-    popup.classList.toggle("active")
-  }
+const popupTriggers = document.querySelectorAll('.popup-trigger');
+// het variabel wordt gecombineerd met een loop en er wordt een functie van gemaakt.
+// de functie heet trigger en loopt door de hele lijst heen en geeft ze eventlisteners
+popupTriggers.forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    // binnen de functie wordt het attribuut data popup opgehaald
+    const popupId = trigger.getAttribute('data-popup');
+    // daarna wordt de fucntie togglepopup aangeroepen, deze functie is ook als onclick gedefinieerd
+    togglePopup(popupId);
+  });
+});
+// hier is de functie togglePopup
+function togglePopup(popupId) {
+  // de popup met het id popupid wordt opgehaald
+  const popup = document.getElementById(popupId);
+// als er een popup wordt opgehaald dan moeten alle popups met de class popup worden geselecteerd
+  if (popup) {
+    const popups = document.querySelectorAll('.popup');
+    
+  //  de class active wordt vanuit de css toegevoegd
+
+    popup.classList.toggle("active");
+
+  //  popup met daarin een class met closebutton wordt opgehaald
+    const closeButton = popup.querySelector('.closeButton');
+    // als close button bestaat dan wordt er een event listener toegevoegd
+    if (closeButton) {
+      // wanneer er op closebutton geklikt wordt wordt de classlist active verwijderd
+      closeButton.addEventListener('click', () => {
+        popup.classList.remove("active");
+      });
+    }
+    // dit is een vangnet voor wanneer de popup id niet wordt opgehaald, in de console komt dan te staan wat er precies niet is opgehaald
+  } 
+  // else {
+  //   console.error(`Popup with ID '${popupId}' not found.`);
+  // }
+}
   </script>
