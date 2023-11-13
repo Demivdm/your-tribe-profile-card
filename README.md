@@ -3,9 +3,9 @@
 ![profilecard-mockup](https://github.com/Demivdm/your-tribe-profile-card/assets/112861166/bd0e8dfa-636f-4fdf-8e06-7a08ca6eb8a3)
 
 ## Inhoudsopgave
-[Beschrijving]()
-* Kenmerken
-* Licentie
+* [Beschrijving](https://github.com/Demivdm/your-tribe-profile-card/blob/main/README.md#beschrijving)
+* [Kenmerken](https://github.com/Demivdm/your-tribe-profile-card/blob/main/README.md#kenmerken)
+* [Licentie](https://github.com/Demivdm/your-tribe-profile-card/blob/main/README.md#licentie)
 
 ## Beschrijving
 
