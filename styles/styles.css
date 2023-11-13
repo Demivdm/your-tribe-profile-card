@@ -80,7 +80,7 @@ li > p {
 /* Pop up */
 
 .popup {
-  background-color: blue;
+  background-color: #0c84feff;
   position: absolute;
   width: 20rem;
   top: 4rem;
@@ -93,11 +93,11 @@ li > p {
 }
 
 .popup p{
-  color: lightblue;
+  color: black;
 }
 
 h2{
-  color: lightblue;
+  color: black;
 }
 span {
   margin: 0 auto;
@@ -117,5 +117,5 @@ span {
   transform: translateX(-50%) scale(1);
 }
 .jokes-list{
-  color: lightblue;
+  color: black;
 }
