@@ -3,7 +3,7 @@
 ![profilecard-mockup](https://github.com/Demivdm/your-tribe-profile-card/assets/112861166/bd0e8dfa-636f-4fdf-8e06-7a08ca6eb8a3)
 
 ## Inhoudsopgave
-* Beschrijving
+[Beschrijving]()
 * Kenmerken
 * Licentie
 
