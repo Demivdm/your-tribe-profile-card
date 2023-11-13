@@ -1,6 +1,6 @@
 # Read me
 
-![image](https://user-images.githubusercontent.com/112861166/200786360-58b3625d-a4b1-475f-a9e8-febe59379ae1.png)
+![profilecard-mockup](https://github.com/Demivdm/your-tribe-profile-card/assets/112861166/bd0e8dfa-636f-4fdf-8e06-7a08ca6eb8a3)
 
 ## Inhoudsopgave
 * Beschrijving
@@ -8,11 +8,12 @@
 * Licentie
 
 ## Beschrijving
+
 Dit is mijn visitekaartje waarin ik mezelf voorstel en je meer informatie over mij kan vinden.
 
 ## Kenmerken
 
-Ik heb deze website gemaakt met gebruik van HTML en CSS
+Ik heb deze website gemaakt met gebruik van HTML, CSS en Javascript
 
 ## Licentie
 
